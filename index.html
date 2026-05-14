@@ -185,6 +185,12 @@ body{font-size:20px!important;}
 .sb-circle{font-size:15px!important;}.sb-label{font-size:11.5px!important;}
 .site-footer,.site-footer p{font-size:15px!important;}
 </style>
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noai,noimageai">
+<meta name="googlebot" content="noindex,nofollow,noai,noimageai">
+<meta name="bingbot" content="noindex,nofollow">
+<meta name="ai-content-declaration" content="no-train">
+<meta name="referrer" content="no-referrer">
+
 <meta name="wy-full-protection" content="silent-v1">
 <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noai,noimageai">
 <meta name="googlebot" content="noindex,nofollow,noai,noimageai">
@@ -194,14 +200,14 @@ body{font-size:20px!important;}
 
 <style id="wy-l3-print">
 @media print {
-  html, body, body * { visibility: hidden !important; }
-  body { background: #fff !important; }
+  html { background: #fff !important; }
+  body { display: none !important; }
+  iframe, iframe.ch-frame { display: none !important; }
   @page { size: auto; margin: 0; }
 }
 </style>
 
-<style id="wy-preguard">html.wy-preguard,html.wy-preguard body{visibility:hidden!important;}</style>
-<script id="wy-preguard-js">document.documentElement.classList.add('wy-preguard');</script>
+<style id="wy-preguard">html:not(.wy-revealed){visibility:hidden!important;background:#fff!important;}html:not(.wy-revealed) body{visibility:hidden!important;background:#fff!important;}</style>
 </head>
 <body oncontextmenu="return false" oncopy="return false" oncut="return false"
       onselectstart="return false" ondragstart="return false">
@@ -213,18 +219,33 @@ body{font-size:20px!important;}
 
   function silentLockdown(reason){
     try{
-      document.documentElement.classList.remove('wy-preguard');
+      /* secure-by-default：不加 .wy-revealed，preguard CSS 持續隱藏整頁（純白）。
+         同時持續清空 body：解析器邊 append 內容、observer 邊清，確保無內容殘留。 */
       var clear = function(){
-        document.body.innerHTML = '';
-        document.body.style.cssText = 'background:#f7f3ec;margin:0;padding:0;height:100vh;';
+        try{
+          var ifr = document.querySelectorAll('iframe');
+          for(var i=0;i<ifr.length;i++){
+            try{ ifr[i].removeAttribute('srcdoc'); ifr[i].remove(); }catch(e){}
+          }
+          if(document.body){
+            if(document.body.childNodes.length){ document.body.innerHTML = ''; }
+            document.body.style.cssText = 'background:#fff;margin:0;padding:0;';
+          }
+        }catch(e){}
       };
-      if(document.body){ clear(); }
-      else { document.addEventListener('DOMContentLoaded', clear); }
-      try{
-        document.querySelectorAll('script, iframe').forEach(function(el){
-          if(el.id !== 'wy-main-guard') el.remove();
-        });
-      }catch(e){}
+      clear();
+      if(document.readyState === 'loading'){
+        document.addEventListener('DOMContentLoaded', clear);
+      }
+      var startObs = function(){
+        try{
+          if(document.documentElement){
+            new MutationObserver(clear).observe(document.documentElement,
+              {childList:true, subtree:true});
+          } else { setTimeout(startObs, 10); }
+        }catch(e){}
+      };
+      startObs();
       window.__wyLocked = true;
       window.__wyLockReason = reason || '';
     }catch(e){}
@@ -289,7 +310,7 @@ body{font-size:20px!important;}
   }
 
   freshnessCheck().then(function(){
-    document.documentElement.classList.remove('wy-preguard');
+    document.documentElement.classList.add('wy-revealed');
     window.__wyOriginOK = true;
     if(window.__wyReadyResolve) window.__wyReadyResolve();
   }).catch(function(){
