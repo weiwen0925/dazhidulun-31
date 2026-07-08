@@ -783,4 +783,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C31P7:END-->
+<!--WY-C31P8:BEGIN-->
+<style id="wy-c31p8-css">
+.c31p8-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c31p8-fabbox.show{display:block;}
+.c31p8-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c31p8-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c31p8-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c31p8-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c31p8-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c31p8-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c31p8-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c31p8-modal.open{display:flex;}
+.c31p8-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c31p8-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c31p8-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c31p8-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c31p8-close:hover{background:#e3d5b8;}
+.c31p8-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c31p8-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c31p8-tbl th,.c31p8-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c31p8-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c31p8-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c31p8-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c31p8-tbl b{color:#8b2500;}
+.c31p8-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c31p8-note b{color:#8b2500;}
+@media(max-width:900px){.c31p8-fabbox{right:14px;}.c31p8-tbl{font-size:11.5px;}.c31p8-card{padding:26px 14px 16px;}}
+</style>
+<div class="c31p8-fabbox" id="c31p8Box"><button class="c31p8-btn" id="c31p8Btn" type="button" aria-label="開啟全景總表"><span class="c31p8-ic">▦</span><span class="c31p8-ls"><span class="c31p8-l1">本品 · 空空</span><span class="c31p8-l2">空是功能非實體 · 以空捨空 · 否定之否定</span></span></button></div><div class="c31p8-modal" id="c31p8Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c31p8-card"><button class="c31p8-close" id="c31p8Close" type="button" aria-label="關閉">×</button><h3>卷三十一·第八品 空空 · 全景總表</h3><p class="sub">卷三十一・第八品｜空是掃把・破有破空辯證螺旋・健兒服藥喻・以空破十七空・非斷滅中道</p><table class="c31p8-tbl"><caption>一、空空的定位·辯證螺旋（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>核心洞見</td><td>空是動態的「<b>功能</b>」、不是靜態的「實體」——如掃把用以掃塵，地板既淨、掃把亦當放下</td></tr><tr><td>修行險境</td><td>空這帖解藥治好「執實有」的病，藥本身卻可能滯留體內反成新病——破萬法之執後轉而緊抓「空」不放（傲慢、虛無、消極）</td></tr><tr><td>第一層·破有</td><td>以「空」對治眾生對五受眾（色受想行識）「實有」的執著</td></tr><tr><td>第二層·破空</td><td>已破實有卻反執「空」這個體驗/概念時，再以「空空」破除對空的執著（自我修正機制）</td></tr><tr><td>系統定位</td><td>空空不在十八空清單外新增對象，其所緣正是前諸空所成立的「空」本身——回頭守護整個系統、防法執（否定之否定，−(−1)＝+1，顯中道非虛無）</td></tr></tbody></table><table class="c31p8-tbl"><caption>二、原典三義與能所之辨</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>三義</td><td>① 以空破內外內外三空、破是三空故名空空 ② 先以法空破內外法、復以此空破是三空 ③ 依空三昧得有餘涅槃、於身命盡欲放捨八道時生空空三昧</td></tr><tr><td>空破五受眾·空空破空</td><td>「空與空空有何異？空破五受眾，空空破空」——能所差別：空緣一切法、空空但緣空</td></tr><tr><td>以空捨空</td><td>「空破一切法，唯有空在；空破一切法已，空亦應捨，以是故須是空空」</td></tr><tr><td>以空破十七空</td><td>「以空破十七空故，名為空空」——空空是遞進的終點，回破前十七空所立之空</td></tr></tbody></table><table class="c31p8-tbl"><caption>三、三喻收束·非斷滅中道</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>健兒破賊喻</td><td>「如一健兒破一切賊，復更有人能破此健人」——健兒（空）破群賊（五受眾實執）後若滯留戰場，須更有人（空空）破此健兒</td></tr><tr><td>服藥喻</td><td>「藥能破病，病已得破，藥亦應出；若藥不出，則復是病」——以空滅諸煩惱病、恐空復為患，故以空捨空</td></tr><tr><td>有餘涅槃的隱憂</td><td>依空三昧得有餘涅槃、斷諸煩惱，但「藥」（對空的微細執取）仍留；於欲放捨八聖道時，空空三昧應運而生</td></tr><tr><td>非斷滅·雙重否定</td><td>空空是「否定之否定」——不是在空之上疊一層更高真理，而是回頭泯除對空的執取，顯不落斷常的中道實相</td></tr><tr><td>修行心法</td><td>持之為渡河之筏、登岸即捨——藥病雙亡，理論落實為可實踐的自我修正</td></tr></tbody></table><p class="c31p8-note">第八品「空空」是十八空中最精微、最易誤解的一環，解決一個真實險境：<b>「空」這帖藥治好「執有」的病，藥本身卻可能滯留體內反成新病</b>。核心洞見是——空是動態的「功能」（如掃把）、不是靜態的「實體」；空空即那「放下掃把、排出餘藥、請走滯留健兒」的自我修正機制。它不在「空」上再疊一層真理，而是回頭把對「空」的執取也一併泯除（否定之否定，−(−1)＝+1）。顯現的不是虛無，而是不落斷常的中道實相——渡河之筏，登岸即捨。</p></div></div>
+<script id="wy-c31p8-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c31p8Btn"),BOX=document.getElementById("c31p8Box"),MODAL=document.getElementById("c31p8Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=7;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#floatVideo,.ch-video,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c31p8Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C31P8:END-->
 </body></html>
