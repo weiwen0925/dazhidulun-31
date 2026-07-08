@@ -518,4 +518,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C31P2:END-->
+<!--WY-C31P3:BEGIN-->
+<style id="wy-c31p3-css">
+.c31p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c31p3-fabbox.show{display:block;}
+.c31p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c31p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c31p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c31p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c31p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c31p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c31p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c31p3-modal.open{display:flex;}
+.c31p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c31p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c31p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c31p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c31p3-close:hover{background:#e3d5b8;}
+.c31p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c31p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c31p3-tbl th,.c31p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c31p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c31p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c31p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c31p3-tbl b{color:#8b2500;}
+.c31p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c31p3-note b{color:#8b2500;}
+@media(max-width:900px){.c31p3-fabbox{right:14px;}.c31p3-tbl{font-size:11.5px;}.c31p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c31p3-fabbox" id="c31p3Box"><button class="c31p3-btn" id="c31p3Btn" type="button" aria-label="開啟全景總表"><span class="c31p3-ic">▦</span><span class="c31p3-ls"><span class="c31p3-l1">本品 · 受念處的中觀辯證</span><span class="c31p3-l2">身為大苦愚以為樂 · 壞苦四重證</span></span></button></div><div class="c31p3-modal" id="c31p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c31p3-card"><button class="c31p3-close" id="c31p3Close" type="button" aria-label="關閉">×</button><h3>卷三十一·第三品 受念處的中觀辯證 · 全景總表</h3><p class="sub">卷三十一・第三品｜三受觀內受・內外三判準・壞苦四重證・苦如箭・觀內受空</p><table class="c31p3-tbl"><caption>一、觀受念處·三受何以觀內受（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>樞紐</td><td>「身為大苦，而愚以為樂」——承身念處（身不淨為大苦）轉入受念處（為何凡夫仍以為樂）</td></tr><tr><td>核心悖論</td><td>三受（樂苦不苦不樂）皆外入所攝，云何言「觀內受」？（問者站物理空間、答者轉心理維度）</td></tr><tr><td>判準一·時間</td><td>六塵初與六情和合生樂＝外樂；後貪著深入生樂＝內樂（初接觸/深貪著）</td></tr><tr><td>判準二·對象</td><td>外法緣樂＝外樂、內法緣樂＝內樂（內樂可脫離當下感官、僅憑回憶想像生起）</td></tr><tr><td>判準三·感知</td><td>五識相應＝麁＝外樂、意識相應＝細＝內樂——「內受」＝經意識加工與執著的心理狀態</td></tr></tbody></table><table class="c31p3-tbl"><caption>二、壞苦四重證（樂是苦的偽裝）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>觀樂之問</td><td>「觀是內樂實可得不？」——分別知實不可得，但為是苦、強名為樂</td></tr><tr><td>證一·因果苦性</td><td>「樂從苦因緣生」——樂由前苦的緩解而生，本質是苦的暫歇</td></tr><tr><td>證二·疥瘡向火</td><td>「亦生苦果報」——如疥瘡向火，暫得快意、旋增其患（醫療譬喻）</td></tr><tr><td>證三·數量懸殊</td><td>「樂無厭足故苦」——樂少苦多、樂短苦長，量級懸殊</td></tr><tr><td>證四·相對無自性</td><td>樂待苦而立、無獨立自性——「壞苦」（Suffering of Change）的完整證明</td></tr></tbody></table><table class="c31p3-tbl"><caption>三、三受觀照·三心並進（觀內受空）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>觀苦</td><td>「觀苦如箭入身」——苦受已苦、無需再破，如箭在身直觀其苦</td></tr><tr><td>觀不苦不樂</td><td>「觀不苦不樂無常變異相」——隱含無常，須提防其為「無常陷阱」</td></tr><tr><td>三心並進</td><td>不定（樂之假名）／疥瘡（苦之逼惱）／捨離（不苦不樂之無常）——三相記憶模組並進</td></tr><tr><td>觀內受空</td><td>「如是等觀三種受，心則捨離，是名觀內受空」——一切定義重構、邏輯解構皆為令行者從三受自然捨離；觀外受、內外受亦如是</td></tr></tbody></table><p class="c31p3-note">第三品承「身為大苦而愚以為樂」轉入受念處。表面矛盾——三受皆外入所生，何以觀「內受」？龍樹把「內外」從物理空間轉為心理維度（時間深淺、緣境內外、感知粗細），將「內受」重新定義為「經意識加工與執著的心理狀態」。再以<b>壞苦四重證</b>（因果、疥瘡向火、數量、相對）拆穿「樂」的實在性——樂只是苦的暫時緩解或偽裝。終以「苦如箭、不苦不樂無常」的三心並進，令心從三受自然捨離，證「觀內受空」。</p></div></div>
+<script id="wy-c31p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c31p3Btn"),BOX=document.getElementById("c31p3Box"),MODAL=document.getElementById("c31p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#floatVideo,.ch-video,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c31p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C31P3:END-->
 </body></html>
