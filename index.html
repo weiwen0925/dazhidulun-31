@@ -730,4 +730,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C31P6:END-->
+<!--WY-C31P7:BEGIN-->
+<style id="wy-c31p7-css">
+.c31p7-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c31p7-fabbox.show{display:block;}
+.c31p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c31p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c31p7-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c31p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c31p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c31p7-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c31p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c31p7-modal.open{display:flex;}
+.c31p7-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c31p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c31p7-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c31p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c31p7-close:hover{background:#e3d5b8;}
+.c31p7-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c31p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c31p7-tbl th,.c31p7-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c31p7-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c31p7-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c31p7-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c31p7-tbl b{color:#8b2500;}
+.c31p7-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c31p7-note b{color:#8b2500;}
+@media(max-width:900px){.c31p7-fabbox{right:14px;}.c31p7-tbl{font-size:11.5px;}.c31p7-card{padding:26px 14px 16px;}}
+</style>
+<div class="c31p7-fabbox" id="c31p7Box"><button class="c31p7-btn" id="c31p7Btn" type="button" aria-label="開啟全景總表"><span class="c31p7-ic">▦</span><span class="c31p7-ls"><span class="c31p7-l1">本品 · 破諸法方便</span><span class="c31p7-l2">大乘破壞非厭離 · 三工具破物質生滅時間</span></span></button></div><div class="c31p7-modal" id="c31p7Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c31p7-card"><button class="c31p7-close" id="c31p7Close" type="button" aria-label="關閉">×</button><h3>卷三十一·第七品 破諸法方便 · 全景總表</h3><p class="sub">卷三十一・第七品｜厭離vs破壞・色如聚沫・生生無窮・著屐之喻・不生不滅・邏輯是門實證是路</p><table class="c31p7-tbl"><caption>一、從厭離到破壞·大乘方便（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>小乘厭離</td><td>視世界為實有→覺其可畏→心生厭離、逃避幻象（承認牆是真實的，只是背過身去）</td></tr><tr><td>大乘破壞</td><td>運用「方便」、以邏輯推演證明諸法本無自性→直接看透幻象（牆從來不是實有，自然無牆可避）</td></tr><tr><td>關鍵分判</td><td>不僅要「不執著」，更要理解為何「無可執著」——前者是修養的克制、後者是見地的徹底</td></tr><tr><td>核心問題</td><td>「大乘有何方便能破壞諸法？」——「破壞」非物理毀壞，而是在認識上瓦解其實有性；佛答「色從種種因緣生、無有堅實、如水波浪成泡沫暫見即滅」，開出三工具</td></tr></tbody></table><table class="c31p7-tbl"><caption>二、三工具·破物質·破生滅（前二）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>工具一·色如聚沫</td><td>破「物質實有」——色是「先世行業×今世四大」因緣的暫時平衡，因緣滅故色亦俱滅</td></tr><tr><td>無有住時</td><td>諸法念念生滅、無停留瞬間；如燃燒中的膠卷每格來不及定影已過——無住則無可取（無常→無住→無可取→空）</td></tr><tr><td>工具二·生生無窮</td><td>破「生滅過程」——雙路歸謬：若已生則「生無所用」（既已存在何必再生）、若未生則「生無所生」（無主體可供生作用）</td></tr><tr><td>無窮後退</td><td>若「生」是實法，須有「生生」生它、又須「生生生」…無窮；若生生不須被生，則生亦不須被生、法亦不應有生——生不可得、滅亦如是</td></tr><tr><td>不生不滅</td><td>「生」不可得故「滅」亦不可得——非落虛無、乃揭諸法真實樣貌（空不是什麼都沒有，而是找不到獨立實有能自生的本體）</td></tr></tbody></table><table class="c31p7-tbl"><caption>三、工具三·破時間·三破合觀（入內空）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>工具三·著屐之喻</td><td>破「時間持續」——木屐（初）終磨成木屑（後）；若後歸於無，則「走向無」的性質必在起點已存（終始一如）</td></tr><tr><td>微細不覺</td><td>木屐從穿上第一天即在磨損（初已有「故」），只是太細微肉眼不覺；若初全無「故」則應常新永不損壞</td></tr><tr><td>當下即空</td><td>壞滅性質從第一刻起即內建、「持續」只是看不見的細微衰變——故一切法當下即空</td></tr><tr><td>三破合觀</td><td>色如聚沫（物質）＋生生無窮（過程）＋著屐之喻（時間）三破，切入點異而同歸「諸法空、不生不滅」，收攝為「內空」的修證入口</td></tr><tr><td>邏輯是門實證是路</td><td>三工具是「破」的邏輯門，證入須落於日用三道心法——邏輯是門、實證是路</td></tr></tbody></table><p class="c31p7-note">第七品區分兩種面對世界的態度：小乘的<b>「厭離」</b>（承認世界實有而逃避）與大乘的<b>「破壞」</b>（以邏輯證明諸法本無自性而看透）。龍樹交付三件破法工具，分別瓦解對存在的三重根本錯覺——色如聚沫破「物質實有」、生生無窮破「生滅過程」、著屐之喻破「時間持續」。三者切入不同，同歸「諸法空、不生不滅」。要點是：這不是落入虛無，而是揭示諸法真實樣貌；空不是什麼都沒有，而是找不到獨立實有、能自己生起的本體——邏輯是門、實證是路。</p></div></div>
+<script id="wy-c31p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c31p7Btn"),BOX=document.getElementById("c31p7Box"),MODAL=document.getElementById("c31p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#floatVideo,.ch-video,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c31p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C31P7:END-->
 </body></html>
