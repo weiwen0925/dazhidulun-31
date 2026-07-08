@@ -624,4 +624,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C31P4:END-->
+<!--WY-C31P5:BEGIN-->
+<style id="wy-c31p5-css">
+.c31p5-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c31p5-fabbox.show{display:block;}
+.c31p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c31p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c31p5-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c31p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c31p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c31p5-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c31p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c31p5-modal.open{display:flex;}
+.c31p5-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c31p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c31p5-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c31p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c31p5-close:hover{background:#e3d5b8;}
+.c31p5-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c31p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c31p5-tbl th,.c31p5-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c31p5-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c31p5-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c31p5-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c31p5-tbl b{color:#8b2500;}
+.c31p5-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c31p5-note b{color:#8b2500;}
+@media(max-width:900px){.c31p5-fabbox{right:14px;}.c31p5-tbl{font-size:11.5px;}.c31p5-card{padding:26px 14px 16px;}}
+</style>
+<div class="c31p5-fabbox" id="c31p5Box"><button class="c31p5-btn" id="c31p5Btn" type="button" aria-label="開啟全景總表"><span class="c31p5-ic">▦</span><span class="c31p5-ls"><span class="c31p5-l1">本品 · 法念處與內外空義</span><span class="c31p5-l2">強名為我 · 窮盡法求我不可得</span></span></button></div><div class="c31p5-modal" id="c31p5Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c31p5-card"><button class="c31p5-close" id="c31p5Close" type="button" aria-label="關閉">×</button><h3>卷三十一·第五品 法念處與內外空義 · 全景總表</h3><p class="sub">卷三十一・第五品｜強名為我・三毒連鎖・想行二眾・窮盡法404・界限在心之相應・三解脫門</p><table class="c31p5-tbl"><caption>一、強名的解構·我見的生起（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>強名</td><td>「但五眾和合故，強名為眾生」——只有五眾（色受想行識）的集合與運作，並無恆常主宰；「我」只是介面上的圖示、無對應實體</td></tr><tr><td>連鎖反應</td><td>計有人相→生我心與我所→利益我者生貪、違逆我者生瞋、此結使從狂惑生故名癡——三毒為一切煩惱之根本</td></tr><tr><td>想行二眾即法念處</td><td>初取相故名想眾、因吾我起結使及諸善行名行眾；此二眾即法念處所觀之法</td></tr><tr><td>總觀為法念處</td><td>身受心及想行二眾乃至無為法皆可總觀為法念處——一切法中求我皆不可得</td></tr></tbody></table><table class="c31p5-tbl"><caption>二、念處範疇與內外重定義</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>四念處別治</td><td>身多著淨顛倒→觀身不淨、受多著樂顛倒→觀受是苦、心多著常顛倒→觀心無常、法多著我顛倒→觀法無我（針對性投藥）</td></tr><tr><td>法念處範疇</td><td>想眾、行眾、無為法——收網式掃描身受心之外的剩餘角落，確保「我」無處藏身</td></tr><tr><td>內外重定義</td><td>界限不在皮膚、而在「心之相應」——內法＝內心相應想行眾；外法＝外心相應想行眾及心不相應行、無為法</td></tr><tr><td>另義</td><td>內法名六情、外法名六塵；一時等觀名內外法</td></tr></tbody></table><table class="c31p5-tbl"><caption>三、窮盡法·求我不可得（三解脫門）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>搜索算法</td><td>窮盡二分掃描——若色/若非色、若可見/不可見、若有為/無為…每條路徑走到盡頭皆回報「求我不可得」（404 Not Found）</td></tr><tr><td>邏輯之網</td><td>內/外、有為/無為等對立軸交織成嚴密的邏輯之網，一切象限皆顯「無我」，幻覺無處遁形</td></tr><tr><td>二喻</td><td>芭蕉（結構之空·層層剝盡無實）、野馬陽焰（認知之空·渴鹿逐焰認妄為實）——分判結構與認知兩重空</td></tr><tr><td>連鎖崩塌</td><td>主體崩塌則我所與煩惱如骨牌連鎖瓦解——解脫不是壓抑，而是抽離地基</td></tr><tr><td>三昧力故空vs法自空·三解脫門</td><td>會歸空、無相、無作三解脫門；非頑空、非常見的中道實相</td></tr></tbody></table><p class="c31p5-note">第五品總攝「法念處」，以法醫學式的解剖刀拆解眾生最深的執著——「我」。先揭「我」不過是五眾和合之上的一個<b>「強名」</b>（標籤），再沿「計有人相→生我我所→三毒爆發」揭示煩惱根源。復把「內外」從物理皮膚重新定義為「心之相應」，並啟動<b>「窮盡法」</b>：把一切存在切成成對二分、地毯式掃描每一象限，結果一律回報「求我不可得」。當主體崩塌，我所與煩惱如骨牌連鎖瓦解——解脫不是壓抑，而是抽離地基，會歸三解脫門的中道實相。</p></div></div>
+<script id="wy-c31p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c31p5Btn"),BOX=document.getElementById("c31p5Box"),MODAL=document.getElementById("c31p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#floatVideo,.ch-video,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c31p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C31P5:END-->
 </body></html>
