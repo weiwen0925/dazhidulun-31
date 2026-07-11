@@ -2172,4 +2172,60 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH31P6:END-->
+<!--WY-BH31P7:BEGIN-->
+<style id="wy-bh31p7-css">
+.bh31p7-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh31p7-fabbox.show{display:block;}
+.bh31p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh31p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh31p7-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh31p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh31p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh31p7-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh31p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh31p7-modal.open{display:flex;}
+.bh31p7-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh31p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh31p7-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh31p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh31p7-close:hover{background:#dde2e6;}
+.bh31p7-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh31p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh31p7-tbl th,.bh31p7-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh31p7-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh31p7-tbl thead th:nth-child(1){width:32%;}.bh31p7-tbl thead th:nth-child(2){width:41%;}.bh31p7-tbl thead th:nth-child(3){width:27%;}
+.bh31p7-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh31p7-guan{background:#eef2f5;color:#37505f;}
+.bh31p7-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh31p7-tbl tbody tr:nth-child(even) td.bh31p7-guan{background:#e8eef2;}
+.bh31p7-tbl b{color:#8b2500;}
+.bh31p7-guan b{color:#2f6b5a;}
+.bh31p7-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh31p7-note b{color:#8b2500;}
+@media(max-width:900px){.bh31p7-fabbox{right:14px;}.bh31p7-tbl{font-size:11px;}.bh31p7-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh31p7-fabbox" id="bh31p7Box"><button class="bh31p7-btn" id="bh31p7Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh31p7-ic">譯</span><span class="bh31p7-ls"><span class="bh31p7-l1">本品 · 原文·白話·中觀</span><span class="bh31p7-l2">白話翻譯表</span></span></button></div><div class="bh31p7-modal" id="bh31p7Modal" role="dialog" aria-modal="true"><div class="bh31p7-card"><button class="bh31p7-close" id="bh31p7Close" type="button" aria-label="關閉">×</button><h3>卷三十一 · 第7品 白話翻譯表（破諸法方便）</h3><p class="sub">《大智度論》卷三十一 · 大乘三種方便破諸法實有 · 原文↔白話↔中觀概念 逐段對照（問答．總問方便與色如聚沫經證；論．生生無窮與著屐之喻；結．內外空總攝）</p><table class="bh31p7-tbl"><caption>總問方便·色如聚沫經證·生生無窮·著屐之喻·內外空總攝 · 原文｜白話翻譯｜中觀概念（共6段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh31p7-src">問曰：大乘有何方便能破壞諸法？</td><td>問：大乘有什麼善巧方便，能夠破除、瓦解對一切法（現象）的實有執著呢？</td><td class="bh31p7-guan"><b>設問——大乘因何得破諸法實有</b>——直接叩問全品核心：小乘止於厭離出世，大乘卻要從根本上「破壞」（瓦解）對諸法實有的執著，此問揭開下文三種方便的序幕。</td></tr><tr><td class="bh31p7-src">答曰：佛說：「色從種種因緣生，無有堅實；如水波浪而成泡沫，暫見即滅，色亦如是。」</td><td>答：佛說過：「色（物質現象）是由種種因緣和合而生起的，並沒有堅固真實的自性；就像水面上的波浪激起泡沫一樣，才剛出現便即刻幻滅，色法也是如此。」</td><td class="bh31p7-guan"><b>色如聚沫——第一件方便的經證</b>——引佛說為證，以「水波成沫，暫見即滅」為喻，指出物質現象本是因緣和合的暫時聚集，並無堅實自性，是大乘「破物質實有」這件方便的根本依據。</td></tr><tr><td class="bh31p7-src">今世四大，先世行業因緣和合故而得成色，因緣滅故色亦俱滅；行無常道，轉入空門。所以者何？諸法生滅，無有住時；若無住時，則無可取。</td><td>今生的四大（地水火風），是由前世行業與種種因緣和合而形成色身；因緣一旦消散，色身也隨之消滅。這正走的是無常之道，由此轉入空的法門。為什麼呢？因為一切法都在生滅變化之中，沒有一刻真正停留、安住；既然沒有可安住的片刻，也就沒有什麼是真正可以執取的。</td><td class="bh31p7-guan"><b>無住——生滅相續中無片刻可取</b>——從四大因緣和合說起，指出色身隨因緣生滅而無常；再進一步點出諸法「無有住時」，連一剎那的安住都不可得，是通往「無所取」這一空義的關鍵推論。</td></tr><tr><td class="bh31p7-src">復次，有為相故，生時有滅，滅時有生。若已生，生無所用；若未生，生無所生。法與生亦不應有異。何以故？生若生法，應有生生，如是復應有生，是則無窮。若生生更無生者，生不應有生；若生無有生者，法亦不應有生。如是生不可得，滅亦如是。</td><td>再者，因為有為法本身具有生滅之相，所以生的當下就含著滅，滅的當下也含著生。如果法已經生起了，那麼「生」這個作用便沒有用處了（生已完成，何須再生）；如果法還沒有生起，那麼「生」也就無所謂使誰生起（沒有主體可生）。「法」和使它生起的「生」這個作用，兩者也不應該是各自獨立、彼此有別的。為什麼呢？如果「生」能夠使「法」生起，那麼「生」本身這個作用，也應該要有另一個「生」使它生起，這樣一層一層推下去，便會沒有窮盡（無窮後退）。如果說使「生」生起的那個「生生」不需要再有別的「生」使它生起，那麼同理，最初的「生」也不應該需要另一個「生」使它生起；如果「生」不需要靠另一個「生」而生起，那麼「法」也同樣不需要靠「生」而生起。像這樣推究下去，「生」終究是不可得的，「滅」的道理也是一樣。</td><td class="bh31p7-guan"><b>生生無窮——雙路歸謬破生滅實有</b>——以「已生無用、未生無生」與「生若能生法，則生自身亦須另一生使其生」的無窮後退（生生不已）兩路歸謬，徹底否定「生」作為一個實有的獨立作用，是中觀「破生」論證的經典雙重進路。</td></tr><tr><td class="bh31p7-src">復次，諸法若有者，終歸於無；若後無者，初亦應無。如人著屐，初已有「故」，微細不覺；若初無「故」，則應常新；若後有故相，初亦有「故」。法亦如是，後有無故，初亦有無，以是故一切法應空。</td><td>再者，一切法如果是真實存在的，最終也會歸於空無；如果說後來會變成沒有，那麼最初其實也應當是沒有的（否則有從無中生起之過）。就好比一個人穿鞋子，其實從穿上的那一刻起，鞋子就已經開始「舊」了，只是這種變化極其微細，穿的人不曾察覺；如果說最初完全沒有一絲「舊」的成分，那麼鞋子就應該永遠保持嶄新；但既然後來確實會顯出破舊之相，可見最初其實就已經帶有「舊」的成分了。一切法的道理也是這樣：既然後來會呈現「無」（壞滅）之相，那麼最初其實也已經帶著「無」的性質；因此，一切法都應當是空的。</td><td class="bh31p7-guan"><b>著屐之喻——當下即空，終始一如</b>——以穿鞋初時即已悄悄變舊、只是微細不覺為喻，說明「終」與「初」其實一如、並無割裂的兩個階段，破除對「當下堅實存在、未來才敗壞」的時間性錯覺，指出壞滅之性其實當下即具足，故一切法本空。</td></tr><tr><td class="bh31p7-src">以眾生顛倒，著內六情故，行者破是顛倒，名為內空。外空、內外空亦如是。</td><td>由於眾生因顛倒妄想而執著於內在的六情（六根），修行人若能破除這種顛倒執著，就稱為內空。外空、內外空的道理也是一樣的。</td><td class="bh31p7-guan"><b>三破合觀，總攝內空</b>——將前述色如聚沫、生生無窮、著屐之喻三件方便匯歸為對六根顛倒執著的破除，正式導出「內空」，並類推至「外空」「內外空」，是本品從方便到正觀的收束。</td></tr></tbody></table><p class="bh31p7-note">本表為卷三十一第7品「破諸法方便」原典部分的原文·白話·中觀三欄對照：以一問一答總攝大乘破諸法方便的總問，再以生生無窮、著屐之喻兩路歸謬破生滅、時間的實有見，終歸於內外空。白話忠於原意、不增不減；中觀欄標出各段所涉的中觀義理。</p></div></div>
+<script id="wy-bh31p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh31p7Btn"),BOX=document.getElementById("bh31p7Box"),MODAL=document.getElementById("bh31p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+var CBOX=document.getElementById("c31p7Box");
+function place(){
+  var b=null;
+  if(CBOX){var st=getComputedStyle(CBOX);var r=CBOX.getBoundingClientRect();if(st.position==="fixed"&&r.height>0&&st.display!=="none")b=Math.round(window.innerHeight-r.top)+8;}
+  if(b===null){var eb=document.querySelector(".wy-ebox");if(eb){var er=eb.getBoundingClientRect();if(er.height>4)b=Math.round(window.innerHeight-er.top)+8;}}
+  if(b===null)b=150;
+  BOX.style.bottom=b+"px"; /*BHPLACE*/
+}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh31p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH31P7:END-->
 </body></html>
