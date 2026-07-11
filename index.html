@@ -1836,4 +1836,60 @@ else window.addEventListener('load',function(){setTimeout(bhGo,200);});
 })();
 </script>
 <!--WY-GOTO:END-->
+<!--WY-BH31P1:BEGIN-->
+<style id="wy-bh31p1-css">
+.bh31p1-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh31p1-fabbox.show{display:block;}
+.bh31p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh31p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh31p1-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh31p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh31p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh31p1-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh31p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh31p1-modal.open{display:flex;}
+.bh31p1-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh31p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh31p1-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh31p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh31p1-close:hover{background:#dde2e6;}
+.bh31p1-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh31p1-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh31p1-tbl th,.bh31p1-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh31p1-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh31p1-tbl thead th:nth-child(1){width:32%;}.bh31p1-tbl thead th:nth-child(2){width:41%;}.bh31p1-tbl thead th:nth-child(3){width:27%;}
+.bh31p1-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh31p1-guan{background:#eef2f5;color:#37505f;}
+.bh31p1-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh31p1-tbl tbody tr:nth-child(even) td.bh31p1-guan{background:#e8eef2;}
+.bh31p1-tbl b{color:#8b2500;}
+.bh31p1-guan b{color:#2f6b5a;}
+.bh31p1-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh31p1-note b{color:#8b2500;}
+@media(max-width:900px){.bh31p1-fabbox{right:14px;}.bh31p1-tbl{font-size:11px;}.bh31p1-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh31p1-fabbox" id="bh31p1Box"><button class="bh31p1-btn" id="bh31p1Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh31p1-ic">譯</span><span class="bh31p1-ls"><span class="bh31p1-l1">本品 · 原文·白話·中觀</span><span class="bh31p1-l2">白話翻譯表</span></span></button></div><div class="bh31p1-modal" id="bh31p1Modal" role="dialog" aria-modal="true"><div class="bh31p1-card"><button class="bh31p1-close" id="bh31p1Close" type="button" aria-label="關閉">×</button><h3>卷三十一 · 第1品 白話翻譯表（釋初品中十八空義）</h3><p class="sub">《大智度論》卷三十一 · 十八空總標與內外空定義 · 原文↔白話↔中觀概念 逐段對照（經．十八空總標；論．內外空定義；問答．十八之數與般若十八空一異）</p><table class="bh31p1-tbl"><caption>十八空總標·內外空定義·施設因緣與一異之辯 · 原文｜白話翻譯｜中觀概念（共6段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh31p1-src">「復次，舍利弗！菩薩摩訶薩欲住內空、外空、內外空、空空、大空、第一義空、有為空、無為空、畢竟空、無始空、散空、性空、自相空、諸法空、不可得空、無法空、有法空、無法有法空，當學般若波羅蜜！」</td><td>「其次，舍利弗！菩薩摩訶薩若想安住於內空、外空、內外空、空空、大空、第一義空、有為空、無為空、畢竟空、無始空、散空、性空、自相空、諸法空、不可得空、無法空、有法空、無法有法空這十八空，就應當修學般若波羅蜜！」</td><td class="bh31p1-guan"><b>十八空總標·以學般若為入處</b>——經文一次列舉十八種空觀，並以「當學般若」總攝，顯示十八空並非各自孤立的名相，而是般若實相智慧開展出的十八個觀照面向。</td></tr><tr><td class="bh31p1-src">內空者，內法，內法空。內法者，所謂內六入：眼、耳、鼻、舌、身、意。眼空，無我、無我所，無眼法；耳、鼻、舌、身、意亦如是。外空者，外法，外法空。外法者，所謂外六入：色、聲、香、味、觸、法。色空者，無我、無我所，無色法；聲、香、味、觸、法亦如是。內外空者，內外法，內外法空。內外法者，所謂內外十二入。十二入中，無我、無我所，無內外法。</td><td>所謂內空，是說內在諸法，內法本空。內法，就是內六入：眼、耳、鼻、舌、身、意。眼是空的，沒有一個真實的「我」，也沒有屬於「我」所有的東西，並無實在的眼法可得；耳、鼻、舌、身、意也是如此。所謂外空，是說外在諸法，外法本空。外法，就是外六入：色、聲、香、味、觸、法。色是空的，沒有我、沒有我所，並無實在的色法可得；聲、香、味、觸、法也是如此。所謂內外空，是說內外諸法，內外法本空。內外法，就是內外十二入合起來說。在這十二入當中，沒有我、沒有我所，並無實在的內外法可得。</td><td class="bh31p1-guan"><b>內外空——破六根六塵之實有</b>——以「無我、無我所」貫穿內六入（六根）、外六入（六塵）及十二入，說明主觀感官與客觀境界皆無自性可得，為十八空系統最基礎的三重觀照。</td></tr><tr><td class="bh31p1-src">問曰：諸法無量，空隨法故，則亦無量，何以但說十八？若略說，應一空，所謂一切法空；若廣說，隨一一法空……何以但說十八空？</td><td>問：一切法無量無邊，空既是隨著法而立，那麼空也應當無量，為什麼偏偏只說十八種空？如果要簡略地說，只須一個「一切法空」就夠了；如果要詳細地說，應當隨每一法各立一空……為什麼獨獨說十八空呢？</td><td class="bh31p1-guan"><b>設問——十八之數的合理性</b>——以「應略則一、應廣則無量」的兩難，逼問「十八」這個中間數目究竟有何根據，是全論十八空施設因緣的問題源頭。</td></tr><tr><td class="bh31p1-src">答曰：若略說則事不周，若廣說則事繁。譬如服藥，少則病不除，多則增其患；應病投藥，令不增減，則能愈病。空亦如是：若佛但說一空，則不能破種種邪見及諸煩惱；若隨種種邪見說空，空則過多，人愛著空相，墮在斷滅。說十八空，正得其中。</td><td>答：如果簡略地說，就不能周全地對治一切；如果詳細地說，又顯得繁瑣。就像服藥一樣，藥少了病治不好，藥多了反而增添禍患；必須對應病情下藥，不多不少，才能真正治好病。空觀也是如此：如果佛只說一種空，就不能破除種種邪見與煩惱；如果隨著各種邪見一一說空，空的名目就會太多，使人反而愛著在「空」這個相上，墮入斷滅見中。說十八空，正好恰到好處，不多不少。</td><td class="bh31p1-guan"><b>應病與藥——中道施設</b>——以醫喻藥，說明「十八」是在「太簡」與「太繁」之間、避免「執有」與「墮斷滅（惡取空）」兩端後所取的中道之數，十八空本身即是中觀「不落二邊」精神的具體展現。</td></tr><tr><td class="bh31p1-src">問曰：般若波羅蜜空、十八空，為異？為一？若異者，離十八空，以何為般若空？若不異者，云何言「欲住十八空，當學般若波羅蜜」？</td><td>問：般若波羅蜜的空，與十八空，到底是不同還是相同？如果不同，那麼離開十八空之外，還有什麼可以作為般若的空？如果並無不同，那麼經文為何又說「想要安住十八空，就應當修學般若波羅蜜」？</td><td class="bh31p1-guan"><b>設問——般若與十八空一異之辯</b>——扣緊經文「住十八空、學般若」的措辭，逼問般若智慧與十八空觀究竟是同一件事、還是能所有別的兩件事。</td></tr><tr><td class="bh31p1-src">答曰：有因緣故言異，有因緣故言一。異者，般若波羅蜜名諸法實相、滅一切觀法；十八空則十八種觀，令諸法空——是名異。一者，十八空與般若波羅蜜皆是「空無所有相、捨離相、不著相」，學般若即是學十八空——不異故。</td><td>答：有的角度說是不同，有的角度說是相同。說不同的角度是：般若波羅蜜指的是諸法的實相，是滅盡一切能觀之法（連「觀」的相狀也不立）；而十八空則是十八種觀照的方法，用來令諸法歸於空——就這一點而言可說是「異」。說相同的角度是：十八空與般若波羅蜜，本質上都是「空無所有之相、捨離一切相、不執著任何相」，因此修學般若，就是修學十八空——就這一點而言二者「不異」。</td><td class="bh31p1-guan"><b>能觀所觀不二——般若十八空之即異即一</b>——以「十八空為能觀之法門、般若為所證之實相」判為異，又以「同歸無相、不著」判為一，展現中觀「不一不異」的辯證思路：方便與究竟看似有別，實則同歸一如。</td></tr></tbody></table><p class="bh31p1-note">本表為卷三十一第1品「釋初品中十八空義」原典部分的原文·白話·中觀三欄對照：經文總標十八空，論釋內、外、內外三空之定義，並以兩番問答分別處理「何以但說十八」與「般若十八空為異為一」兩個根本疑難。白話忠於原意、不增不減；中觀欄標出各段所涉的中觀義理。</p></div></div>
+<script id="wy-bh31p1-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh31p1Btn"),BOX=document.getElementById("bh31p1Box"),MODAL=document.getElementById("bh31p1Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=0;
+var CBOX=document.getElementById("c31p1Box");
+function place(){
+  var b=null;
+  if(CBOX){var st=getComputedStyle(CBOX);var r=CBOX.getBoundingClientRect();if(st.position==="fixed"&&r.height>0&&st.display!=="none")b=Math.round(window.innerHeight-r.top)+8;}
+  if(b===null){var eb=document.querySelector(".wy-ebox");if(eb){var er=eb.getBoundingClientRect();if(er.height>4)b=Math.round(window.innerHeight-er.top)+8;}}
+  if(b===null)b=150;
+  BOX.style.bottom=b+"px"; /*BHPLACE*/
+}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh31p1Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH31P1:END-->
 </body></html>
